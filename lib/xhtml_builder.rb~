@@ -7,7 +7,7 @@ class XHTMLBuilder
    end
 
    def method_missing(method, *args, &block)
-       @p_method = method.to_s
+       @tag = method.to_s
        @p_args_zero = *args
        #@p_block = block
        build(@p_method, @p_args_zero, &block)

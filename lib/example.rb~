@@ -1,4 +1,4 @@
-require 'xhtml_builder'
+require 'xhtml_builder_old'
 
 b = XHTMLBuilder.new
 
@@ -7,7 +7,7 @@ b.html do
     b.title("My Fancy Webpage")
   end
   b.body do
-    b.h1("Fancy Title")
+    b.headline(1, "Fancy Title")
     b.p do
      b.b("Bold words")
       b.i("Followed by italic words")
